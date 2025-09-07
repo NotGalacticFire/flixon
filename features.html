@@ -1,0 +1,1301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Flixon Features Showcase - Demonstrating cutting-edge web development capabilities">
+    <title>Features Showcase - Flixon</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@100;200;300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,100..900&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/features.css">
+</head>
+<body>
+    <nav id="main-nav" class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h1><a href="index.html">Flixon</a></h1>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+                <li><a href="index.html#services" class="nav-link">Services</a></li>
+                <li><a href="index.html#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="features.html" class="nav-link active">Features</a></li>
+                <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+                    <span class="theme-icon"></span>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="features-main">
+        <section class="features-hero">
+            <div class="container">
+                <div class="features-hero-content" data-aos="fade-up">
+                    <h1 class="features-title">Advanced Web Features</h1>
+                    <p class="features-subtitle">Explore our comprehensive collection of modern web development capabilities</p>
+                </div>
+                <div class="hero-sparkles" aria-hidden="true">
+                    <span class="sparkle s1">⚙️</span>
+                    <span class="sparkle s2">✨</span>
+                    <span class="sparkle s3">🧩</span>
+                    <span class="sparkle s4">🎯</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-demo" id="hero-backgrounds">
+            <div class="container">
+                <div class="feature-header" data-aos="fade-up">
+                    <h2>🎬 Hero Image/Video Backgrounds</h2>
+                    <p>Stunning visual backgrounds that create immediate impact</p>
+                </div>
+                
+                <div class="demo-container" data-aos="fade-up">
+                    <div class="demo-tabs">
+                        <button class="demo-tab active" data-demo="video">Video Background</button>
+                        <button class="demo-tab" data-demo="image">Image Background</button>
+                        <button class="demo-tab" data-demo="gradient">Gradient Overlay</button>
+                    </div>
+                    
+                    <div class="demo-content">
+                        <div class="demo-item active" data-demo-content="video">
+                            <div class="hero-demo video-bg">
+                                <div class="hero-overlay"></div>
+                                <div class="hero-content-demo">
+                                    <h3>Video Background Demo</h3>
+                                    <p>Engaging video backgrounds with optimized performance</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-item" data-demo-content="image">
+                            <div class="hero-demo image-bg">
+                                <div class="hero-overlay"></div>
+                                <div class="hero-content-demo">
+                                    <h3>Image Background Demo</h3>
+                                    <p>High-quality images with parallax effects</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="demo-item" data-demo-content="gradient">
+                            <div class="hero-demo gradient-bg">
+                                <div class="hero-content-demo">
+                                    <h3>Gradient Background Demo</h3>
+                                    <p>Beautiful animated gradients and color schemes</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-demo advanced-carousel-section" id="image-carousel">
+            <div class="floating-particles">
+                <div class="particle particle-1"></div>
+                <div class="particle particle-2"></div>
+                <div class="particle particle-3"></div>
+                <div class="particle particle-4"></div>
+                <div class="particle particle-5"></div>
+            </div>
+            <div class="container">
+                <div class="feature-header advanced-header" data-aos="fade-up">
+                    <div class="floating-icons">
+                        <div class="floating-icon icon-1">✨</div>
+                        <div class="floating-icon icon-2">🚀</div>
+                        <div class="floating-icon icon-3">⚡</div>
+                    </div>
+                    <h2 class="gradient-text">🎠 Advanced Interactive Carousels</h2>
+                    <p class="enhanced-subtitle">Experience cutting-edge 3D carousels with drag, swipe, and immersive interactions</p>
+                    <div class="connecting-line"></div>
+                </div>
+                
+                <div class="advanced-carousel-container" data-aos="fade-up">
+                    <!-- Advanced Interactive Carousel -->
+                    <div class="super-carousel-demo">
+                        <h3 class="carousel-label">Ultra-Interactive 3D Carousel</h3>
+                        
+                        <div class="super-carousel-container">
+                            <!-- Navigation Controls -->
+                            <button class="super-nav-btn prev-btn" id="superPrev" aria-label="Previous slide">
+                                <div class="btn-glow"></div>
+                                <div class="btn-content">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="btn-particles">
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                </div>
+                            </button>
+                            
+                            <button class="super-nav-btn next-btn" id="superNext" aria-label="Next slide">
+                                <div class="btn-glow"></div>
+                                <div class="btn-content">
+                                    <svg viewBox="0 0 24 24" width="24" height="24">
+                                        <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                </div>
+                                <div class="btn-particles">
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                    <span class="particle"></span>
+                                </div>
+                            </button>
+                            
+                            <!-- Carousel Stage -->
+                            <div class="super-carousel-stage" id="superCarouselStage">
+                                <div class="carousel-track" id="carouselTrack">
+                                    <div class="super-slide active" data-index="0">
+                                        <div class="slide-bg" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                                        <div class="slide-content">
+                                            <div class="slide-icon">
+                                                <div class="icon-wrapper">
+                                                    <span>🎨</span>
+                                                    <div class="icon-glow"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="slide-title">Creative Design</h4>
+                                            <p class="slide-description">Stunning visual experiences that captivate and engage users across all platforms</p>
+                                            <div class="slide-stats">
+                                                <div class="stat">
+                                                    <span class="stat-number">95%</span>
+                                                    <span class="stat-label">Satisfaction</span>
+                                                </div>
+                                                <div class="stat">
+                                                    <span class="stat-number">200+</span>
+                                                    <span class="stat-label">Projects</span>
+                                                </div>
+                                            </div>
+                                            <button class="slide-action-btn">Learn More</button>
+                                        </div>
+                                        <div class="slide-overlay"></div>
+                                    </div>
+                                    
+                                    <div class="super-slide" data-index="1">
+                                        <div class="slide-bg" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                                        <div class="slide-content">
+                                            <div class="slide-icon">
+                                                <div class="icon-wrapper">
+                                                    <span>⚡</span>
+                                                    <div class="icon-glow"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="slide-title">Performance</h4>
+                                            <p class="slide-description">Lightning-fast applications with optimized code and cutting-edge performance metrics</p>
+                                            <div class="slide-stats">
+                                                <div class="stat">
+                                                    <span class="stat-number">0.8s</span>
+                                                    <span class="stat-label">Load Time</span>
+                                                </div>
+                                                <div class="stat">
+                                                    <span class="stat-number">99%</span>
+                                                    <span class="stat-label">Uptime</span>
+                                                </div>
+                                            </div>
+                                            <button class="slide-action-btn">Optimize Now</button>
+                                        </div>
+                                        <div class="slide-overlay"></div>
+                                    </div>
+                                    
+                                    <div class="super-slide" data-index="2">
+                                        <div class="slide-bg" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
+                                        <div class="slide-content">
+                                            <div class="slide-icon">
+                                                <div class="icon-wrapper">
+                                                    <span>🚀</span>
+                                                    <div class="icon-glow"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="slide-title">Innovation</h4>
+                                            <p class="slide-description">Cutting-edge solutions using the latest technologies and development practices</p>
+                                            <div class="slide-stats">
+                                                <div class="stat">
+                                                    <span class="stat-number">50+</span>
+                                                    <span class="stat-label">Technologies</span>
+                                                </div>
+                                                <div class="stat">
+                                                    <span class="stat-number">100%</span>
+                                                    <span class="stat-label">Modern</span>
+                                                </div>
+                                            </div>
+                                            <button class="slide-action-btn">Explore Tech</button>
+                                        </div>
+                                        <div class="slide-overlay"></div>
+                                    </div>
+                                    
+                                    <div class="super-slide" data-index="3">
+                                        <div class="slide-bg" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"></div>
+                                        <div class="slide-content">
+                                            <div class="slide-icon">
+                                                <div class="icon-wrapper">
+                                                    <span>🎯</span>
+                                                    <div class="icon-glow"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="slide-title">User Focus</h4>
+                                            <p class="slide-description">Intuitive experiences designed with user research and extensive testing</p>
+                                            <div class="slide-stats">
+                                                <div class="stat">
+                                                    <span class="stat-number">98%</span>
+                                                    <span class="stat-label">Usability</span>
+                                                </div>
+                                                <div class="stat">
+                                                    <span class="stat-number">5.0</span>
+                                                    <span class="stat-label">Rating</span>
+                                                </div>
+                                            </div>
+                                            <button class="slide-action-btn">View Research</button>
+                                        </div>
+                                        <div class="slide-overlay"></div>
+                                    </div>
+                                    
+                                    <div class="super-slide" data-index="4">
+                                        <div class="slide-bg" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%)"></div>
+                                        <div class="slide-content">
+                                            <div class="slide-icon">
+                                                <div class="icon-wrapper">
+                                                    <span>💎</span>
+                                                    <div class="icon-glow"></div>
+                                                </div>
+                                            </div>
+                                            <h4 class="slide-title">Premium Quality</h4>
+                                            <p class="slide-description">Excellence in every detail with comprehensive quality assurance processes</p>
+                                            <div class="slide-stats">
+                                                <div class="stat">
+                                                    <span class="stat-number">0</span>
+                                                    <span class="stat-label">Defects</span>
+                                                </div>
+                                                <div class="stat">
+                                                    <span class="stat-number">A+</span>
+                                                    <span class="stat-label">Grade</span>
+                                                </div>
+                                            </div>
+                                            <button class="slide-action-btn">Quality Report</button>
+                                        </div>
+                                        <div class="slide-overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Progress Ring -->
+                            <div class="carousel-progress-ring">
+                                <svg class="progress-circle" viewBox="0 0 120 120">
+                                    <circle class="progress-bg" cx="60" cy="60" r="54" />
+                                    <circle class="progress-fill" cx="60" cy="60" r="54" id="progressCircle" />
+                                </svg>
+                                <div class="progress-counter">
+                                    <span class="current-slide">1</span>
+                                    <span class="divider">/</span>
+                                    <span class="total-slides">5</span>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Enhanced Indicators -->
+                        <div class="super-indicators" id="superIndicators">
+                            <div class="indicator-wrapper">
+                                <button class="super-indicator active" data-index="0">
+                                    <div class="indicator-bg"></div>
+                                    <div class="indicator-progress"></div>
+                                    <span class="indicator-label">Design</span>
+                                </button>
+                                <button class="super-indicator" data-index="1">
+                                    <div class="indicator-bg"></div>
+                                    <div class="indicator-progress"></div>
+                                    <span class="indicator-label">Performance</span>
+                                </button>
+                                <button class="super-indicator" data-index="2">
+                                    <div class="indicator-bg"></div>
+                                    <div class="indicator-progress"></div>
+                                    <span class="indicator-label">Innovation</span>
+                                </button>
+                                <button class="super-indicator" data-index="3">
+                                    <div class="indicator-bg"></div>
+                                    <div class="indicator-progress"></div>
+                                    <span class="indicator-label">User Focus</span>
+                                </button>
+                                <button class="super-indicator" data-index="4">
+                                    <div class="indicator-bg"></div>
+                                    <div class="indicator-progress"></div>
+                                    <span class="indicator-label">Quality</span>
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <!-- Interactive Features Display -->
+                        <div class="carousel-features">
+                            <div class="feature-item">
+                                <div class="feature-icon">👆</div>
+                                <span>Drag & Drop</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">📱</div>
+                                <span>Touch Gestures</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🖱️</div>
+                                <span>Mouse Wheel</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">⌨️</div>
+                                <span>Keyboard</span>
+                            </div>
+                            <div class="feature-item">
+                                <div class="feature-icon">🎯</div>
+                                <span>Auto-Play</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Parallax Depth Carousel -->
+                    <div class="carousel-parallax-demo">
+                        <h3 class="carousel-label">Parallax Depth Carousel</h3>
+                        <div class="carousel-parallax-wrapper">
+                            <div class="parallax-carousel" id="parallaxCarousel">
+                                <div class="parallax-slide active" data-bg="linear-gradient(135deg, #667eea 0%, #764ba2 100%)">
+                                    <div class="parallax-layers">
+                                        <div class="parallax-bg" data-speed="0.2"></div>
+                                        <div class="parallax-content" data-speed="0.8">
+                                            <h4>Web Applications</h4>
+                                            <p>Full-stack development with modern frameworks</p>
+                                            <div class="tech-badges">
+                                                <span class="tech-badge">React</span>
+                                                <span class="tech-badge">Node.js</span>
+                                                <span class="tech-badge">MongoDB</span>
+                                            </div>
+                                        </div>
+                                        <div class="parallax-decoration" data-speed="0.5">
+                                            <div class="floating-shape shape-1"></div>
+                                            <div class="floating-shape shape-2"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="parallax-slide" data-bg="linear-gradient(135deg, #f093fb 0%, #f5576c 100%)">
+                                    <div class="parallax-layers">
+                                        <div class="parallax-bg" data-speed="0.2"></div>
+                                        <div class="parallax-content" data-speed="0.8">
+                                            <h4>Mobile Solutions</h4>
+                                            <p>Native and cross-platform mobile applications</p>
+                                            <div class="tech-badges">
+                                                <span class="tech-badge">React Native</span>
+                                                <span class="tech-badge">Flutter</span>
+                                                <span class="tech-badge">Swift</span>
+                                            </div>
+                                        </div>
+                                        <div class="parallax-decoration" data-speed="0.5">
+                                            <div class="floating-shape shape-3"></div>
+                                            <div class="floating-shape shape-4"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="parallax-slide" data-bg="linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)">
+                                    <div class="parallax-layers">
+                                        <div class="parallax-bg" data-speed="0.2"></div>
+                                        <div class="parallax-content" data-speed="0.8">
+                                            <h4>Cloud Solutions</h4>
+                                            <p>Scalable infrastructure and DevOps automation</p>
+                                            <div class="tech-badges">
+                                                <span class="tech-badge">AWS</span>
+                                                <span class="tech-badge">Docker</span>
+                                                <span class="tech-badge">Kubernetes</span>
+                                            </div>
+                                        </div>
+                                        <div class="parallax-decoration" data-speed="0.5">
+                                            <div class="floating-shape shape-5"></div>
+                                            <div class="floating-shape shape-6"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="parallax-progress">
+                            <div class="progress-fill" id="parallaxProgress"></div>
+                        </div>
+                    </div>
+
+                    <!-- Gesture Controls Info -->
+                    <div class="gesture-controls-info">
+                        <h4>Interactive Controls</h4>
+                        <div class="control-methods">
+                            <div class="control-method">
+                                <div class="control-icon">👆</div>
+                                <span>Drag & Drop</span>
+                            </div>
+                            <div class="control-method">
+                                <div class="control-icon">📱</div>
+                                <span>Touch Swipe</span>
+                            </div>
+                            <div class="control-method">
+                                <div class="control-icon">🖱️</div>
+                                <span>Mouse Wheel</span>
+                            </div>
+                            <div class="control-method">
+                                <div class="control-icon">⌨️</div>
+                                <span>Arrow Keys</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="feature-demo scroll-animations-section" id="scroll-animations">
+            <div class="animated-background">
+                <div class="bg-shape shape-1"></div>
+                <div class="bg-shape shape-2"></div>
+                <div class="bg-shape shape-3"></div>
+            </div>
+            <div class="container">
+                <div class="feature-header offset-left" data-aos="fade-right">
+                    <div class="floating-icons">
+                        <div class="floating-icon icon-scroll-1">🌟</div>
+                        <div class="floating-icon icon-scroll-2">✨</div>
+                        <div class="floating-icon icon-scroll-3">💫</div>
+                    </div>
+                    <h2 class="gradient-text">✨ Scroll-Triggered Real Elements</h2>
+                    <p class="enhanced-subtitle">Watch authentic website components animate naturally as you scroll</p>
+                    <div class="connecting-line diagonal"></div>
+                </div>
+                
+                <!-- Website Components Showcase -->
+                <div class="real-elements-showcase">
+                    
+                    <!-- Interactive Buttons Section -->
+                    <div class="element-group buttons-group">
+                        <h3 class="group-title" data-aos="slide-right" data-aos-delay="100">Interactive Buttons</h3>
+                        <div class="element-container" data-aos="zoom-in-up" data-aos-delay="200">
+                            <button class="animated-btn primary-btn" data-animate="bounce-in">
+                                <span class="btn-text">Get Started</span>
+                                <div class="btn-ripple"></div>
+                            </button>
+                            <button class="animated-btn secondary-btn" data-animate="slide-up">
+                                <span class="btn-text">Learn More</span>
+                                <div class="btn-glow"></div>
+                            </button>
+                            <button class="animated-btn accent-btn" data-animate="rotate-in">
+                                <span class="btn-text">Contact Us</span>
+                                <div class="btn-particles"></div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Feature Cards Section -->
+                    <div class="element-group cards-group">
+                        <h3 class="group-title" data-aos="slide-left" data-aos-delay="300">Feature Cards</h3>
+                        <div class="cards-container">
+                            <div class="feature-card card-1" data-aos="flip-left" data-aos-delay="400">
+                                <div class="card-header">
+                                    <div class="card-icon">🎨</div>
+                                    <h4>Creative Design</h4>
+                                </div>
+                                <p>Beautiful, modern interfaces that captivate users</p>
+                                <div class="card-footer">
+                                    <span class="card-tag">Design</span>
+                                    <div class="card-arrow">→</div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                            
+                            <div class="feature-card card-2" data-aos="flip-up" data-aos-delay="500">
+                                <div class="card-header">
+                                    <div class="card-icon">⚡</div>
+                                    <h4>Performance</h4>
+                                </div>
+                                <p>Lightning-fast applications optimized for speed</p>
+                                <div class="card-footer">
+                                    <span class="card-tag">Speed</span>
+                                    <div class="card-arrow">→</div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                            
+                            <div class="feature-card card-3" data-aos="flip-right" data-aos-delay="600">
+                                <div class="card-header">
+                                    <div class="card-icon">🚀</div>
+                                    <h4>Innovation</h4>
+                                </div>
+                                <p>Cutting-edge solutions using latest technologies</p>
+                                <div class="card-footer">
+                                    <span class="card-tag">Tech</span>
+                                    <div class="card-arrow">→</div>
+                                </div>
+                                <div class="card-shine"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Image Gallery Section -->
+                    <div class="element-group gallery-group">
+                        <h3 class="group-title center-title" data-aos="fade-up" data-aos-delay="700">Image Gallery</h3>
+                        <div class="image-gallery">
+                            <div class="gallery-item item-1" data-aos="zoom-out-up" data-aos-delay="800">
+                                <div class="image-placeholder">
+                                    <div class="image-content">
+                                        <span class="image-icon">🏞️</span>
+                                        <p>Portfolio Image 1</p>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <button class="overlay-btn">View</button>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item item-2" data-aos="zoom-out-down" data-aos-delay="900">
+                                <div class="image-placeholder">
+                                    <div class="image-content">
+                                        <span class="image-icon">🎨</span>
+                                        <p>Design Work</p>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <button class="overlay-btn">View</button>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item item-3" data-aos="zoom-out-left" data-aos-delay="1000">
+                                <div class="image-placeholder">
+                                    <div class="image-content">
+                                        <span class="image-icon">💻</span>
+                                        <p>Web Project</p>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <button class="overlay-btn">View</button>
+                                </div>
+                            </div>
+                            
+                            <div class="gallery-item item-4" data-aos="zoom-out-right" data-aos-delay="1100">
+                                <div class="image-placeholder">
+                                    <div class="image-content">
+                                        <span class="image-icon">📱</span>
+                                        <p>Mobile App</p>
+                                    </div>
+                                </div>
+                                <div class="image-overlay">
+                                    <button class="overlay-btn">View</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Text Blocks Section -->
+                    <div class="element-group text-blocks-group">
+                        <div class="text-blocks-container">
+                            <div class="text-block block-1" data-aos="slide-right" data-aos-delay="1200">
+                                <div class="text-icon">📝</div>
+                                <h4>Content Strategy</h4>
+                                <p>Crafting compelling narratives that resonate with your audience and drive engagement through strategic messaging.</p>
+                                <div class="text-underline"></div>
+                            </div>
+                            
+                            <div class="text-block block-2" data-aos="slide-left" data-aos-delay="1300">
+                                <div class="text-icon">📊</div>
+                                <h4>Data Analytics</h4>
+                                <p>Transform raw data into actionable insights that inform decision-making and optimize performance across all touchpoints.</p>
+                                <div class="text-underline"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+
+                </div>
+
+                <!-- Animation Controls -->
+                <div class="animation-controls" data-aos="fade-up" data-aos-delay="1600">
+                    <h4>Animation Showcase</h4>
+                    <p>Real website elements with unique entrance animations</p>
+                    <button class="replay-btn" id="replayAnimations">
+                        <span>🔄</span> Replay Animations
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-demo counters-section" id="animated-counters">
+            <div class="stats-background">
+                <div class="stats-particle particle-1"></div>
+                <div class="stats-particle particle-2"></div>
+                <div class="stats-particle particle-3"></div>
+                <div class="stats-particle particle-4"></div>
+                <div class="floating-numbers">
+                    <span class="floating-number n1">1</span>
+                    <span class="floating-number n2">0</span>
+                    <span class="floating-number n3">0</span>
+                    <span class="floating-number n4">%</span>
+                </div>
+            </div>
+            <div class="container">
+                <div class="feature-header center-aligned" data-aos="zoom-in">
+                    <div class="floating-icons">
+                        <div class="floating-icon icon-stats-1">📈</div>
+                        <div class="floating-icon icon-stats-2">💯</div>
+                        <div class="floating-icon icon-stats-3">🎯</div>
+                    </div>
+                    <h2 class="gradient-text">📊 Enhanced Statistics & Metrics</h2>
+                    <p class="enhanced-subtitle">Dynamic counters and progress visualizations with stunning effects</p>
+                    <div class="connecting-line curved"></div>
+                </div>
+                
+                <!-- Enhanced Counters -->
+                <div class="enhanced-counters-container" data-aos="fade-up">
+                    <div class="counter-card card-projects" data-aos="flip-left" data-aos-delay="100">
+                        <div class="counter-bg-effect"></div>
+                        <div class="counter-icon">
+                            <div class="icon-wrapper">
+                                <span class="icon">🚀</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="counter-content">
+                            <div class="counter-number" data-target="2547" data-suffix="+">0</div>
+                            <div class="counter-label">Projects Completed</div>
+                            <div class="counter-description">Successfully delivered worldwide</div>
+                        </div>
+                        <div class="counter-progress">
+                            <div class="progress-ring">
+                                <svg class="progress-circle" width="100" height="100">
+                                    <circle class="progress-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="progress-circle-fill" cx="50" cy="50" r="45" data-progress="85"/>
+                                </svg>
+                                <span class="progress-percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="counter-card card-satisfaction" data-aos="flip-up" data-aos-delay="200">
+                        <div class="counter-bg-effect"></div>
+                        <div class="counter-icon">
+                            <div class="icon-wrapper">
+                                <span class="icon">⭐</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="counter-content">
+                            <div class="counter-number" data-target="99" data-suffix="%">0</div>
+                            <div class="counter-label">Client Satisfaction</div>
+                            <div class="counter-description">Average rating across projects</div>
+                        </div>
+                        <div class="counter-progress">
+                            <div class="progress-ring">
+                                <svg class="progress-circle" width="100" height="100">
+                                    <circle class="progress-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="progress-circle-fill" cx="50" cy="50" r="45" data-progress="99"/>
+                                </svg>
+                                <span class="progress-percentage">99%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="counter-card card-team" data-aos="flip-right" data-aos-delay="300">
+                        <div class="counter-bg-effect"></div>
+                        <div class="counter-icon">
+                            <div class="icon-wrapper">
+                                <span class="icon">👥</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="counter-content">
+                            <div class="counter-number" data-target="32" data-suffix="+">0</div>
+                            <div class="counter-label">Expert Team</div>
+                            <div class="counter-description">Skilled professionals</div>
+                        </div>
+                        <div class="counter-progress">
+                            <div class="progress-ring">
+                                <svg class="progress-circle" width="100" height="100">
+                                    <circle class="progress-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="progress-circle-fill" cx="50" cy="50" r="45" data-progress="78"/>
+                                </svg>
+                                <span class="progress-percentage">78%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="counter-card card-experience" data-aos="flip-down" data-aos-delay="400">
+                        <div class="counter-bg-effect"></div>
+                        <div class="counter-icon">
+                            <div class="icon-wrapper">
+                                <span class="icon">💎</span>
+                                <div class="icon-pulse"></div>
+                            </div>
+                        </div>
+                        <div class="counter-content">
+                            <div class="counter-number" data-target="8" data-suffix=" Years">0</div>
+                            <div class="counter-label">Industry Experience</div>
+                            <div class="counter-description">Proven track record</div>
+                        </div>
+                        <div class="counter-progress">
+                            <div class="progress-ring">
+                                <svg class="progress-circle" width="100" height="100">
+                                    <circle class="progress-circle-bg" cx="50" cy="50" r="45"/>
+                                    <circle class="progress-circle-fill" cx="50" cy="50" r="45" data-progress="92"/>
+                                </svg>
+                                <span class="progress-percentage">92%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Enhanced Progress Bars -->
+                <div class="enhanced-progress-container" data-aos="fade-up" data-aos-delay="500">
+                    <h3 class="progress-title">Technical Expertise</h3>
+                    <div class="skills-grid">
+                        
+                        <div class="skill-item" data-aos="slide-right" data-aos-delay="600">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">⚛️</span>
+                                    <h4>React & Next.js</h4>
+                                </div>
+                                <span class="skill-percentage" data-target="96">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="96">
+                                    <div class="progress-glow"></div>
+                                    <div class="progress-particles">
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-details">Frontend Development • Server-side Rendering</div>
+                        </div>
+
+                        <div class="skill-item" data-aos="slide-left" data-aos-delay="700">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🟢</span>
+                                    <h4>Node.js & APIs</h4>
+                                </div>
+                                <span class="skill-percentage" data-target="93">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93">
+                                    <div class="progress-glow"></div>
+                                    <div class="progress-particles">
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-details">Backend Development • RESTful Services</div>
+                        </div>
+
+                        <div class="skill-item" data-aos="slide-right" data-aos-delay="800">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🎨</span>
+                                    <h4>UI/UX Design</h4>
+                                </div>
+                                <span class="skill-percentage" data-target="89">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="89">
+                                    <div class="progress-glow"></div>
+                                    <div class="progress-particles">
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-details">User Experience • Interface Design</div>
+                        </div>
+
+                        <div class="skill-item" data-aos="slide-left" data-aos-delay="900">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">☁️</span>
+                                    <h4>Cloud & DevOps</h4>
+                                </div>
+                                <span class="skill-percentage" data-target="85">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85">
+                                    <div class="progress-glow"></div>
+                                    <div class="progress-particles">
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-details">AWS • Docker • CI/CD Pipelines</div>
+                        </div>
+
+                        <div class="skill-item" data-aos="slide-right" data-aos-delay="1000">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">📱</span>
+                                    <h4>Mobile Development</h4>
+                                </div>
+                                <span class="skill-percentage" data-target="82">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82">
+                                    <div class="progress-glow"></div>
+                                    <div class="progress-particles">
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-details">React Native • Flutter • iOS/Android</div>
+                        </div>
+
+                        <div class="skill-item" data-aos="slide-left" data-aos-delay="1100">
+                            <div class="skill-header">
+                                <div class="skill-info">
+                                    <span class="skill-icon">🤖</span>
+                                    <h4>AI & Machine Learning</h4>
+                                </div>
+                                <span class="skill-percentage" data-target="78">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="78">
+                                    <div class="progress-glow"></div>
+                                    <div class="progress-particles">
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                        <span class="particle"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="skill-details">TensorFlow • Python • Data Science</div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <!-- Interactive Controls -->
+                <div class="stats-controls" data-aos="zoom-in" data-aos-delay="1200">
+                    <h4>Interactive Statistics</h4>
+                    <p>Hover over elements to see detailed breakdowns</p>
+                    <button class="animate-stats-btn" id="animateStats">
+                        <span>🎯</span> Animate All Stats
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="feature-demo masonry-gallery-section" id="masonry-gallery">
+            <div class="gallery-background">
+                <div class="bg-particle p1"></div>
+                <div class="bg-particle p2"></div>
+                <div class="bg-particle p3"></div>
+                <div class="bg-particle p4"></div>
+                <div class="floating-elements">
+                    <div class="floating-element e1">📸</div>
+                    <div class="floating-element e2">🎨</div>
+                    <div class="floating-element e3">💻</div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="feature-header enhanced-header" data-aos="fade-up">
+                    <div class="floating-icons">
+                        <div class="floating-icon icon-gallery-1">🖼️</div>
+                        <div class="floating-icon icon-gallery-2">✨</div>
+                        <div class="floating-icon icon-gallery-3">🎯</div>
+                    </div>
+                    <h2 class="gradient-text">🖼️ Dynamic Masonry Gallery</h2>
+                    <p class="enhanced-subtitle">Interactive Pinterest-style layout with advanced filtering and animations</p>
+                    <div class="connecting-line spiral"></div>
+                </div>
+                
+                <div class="enhanced-masonry-demo" data-aos="fade-up">
+                    <!-- Advanced Filter Controls -->
+                    <div class="masonry-filter-panel">
+                        <div class="filter-controls">
+                            <button class="advanced-filter-btn active" data-filter="*" data-aos="zoom-in" data-aos-delay="100">
+                                <div class="filter-bg"></div>
+                                <span class="filter-icon">🔍</span>
+                                <span class="filter-label">All Projects</span>
+                                <span class="filter-count" id="count-all">15</span>
+                            </button>
+                            <button class="advanced-filter-btn" data-filter=".web" data-aos="zoom-in" data-aos-delay="200">
+                                <div class="filter-bg"></div>
+                                <span class="filter-icon">🌐</span>
+                                <span class="filter-label">Web Design</span>
+                                <span class="filter-count" id="count-web">6</span>
+                            </button>
+                            <button class="advanced-filter-btn" data-filter=".mobile" data-aos="zoom-in" data-aos-delay="300">
+                                <div class="filter-bg"></div>
+                                <span class="filter-icon">📱</span>
+                                <span class="filter-label">Mobile Apps</span>
+                                <span class="filter-count" id="count-mobile">5</span>
+                            </button>
+                            <button class="advanced-filter-btn" data-filter=".branding" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="filter-bg"></div>
+                                <span class="filter-icon">🎨</span>
+                                <span class="filter-label">Branding</span>
+                                <span class="filter-count" id="count-branding">4</span>
+                            </button>
+                        </div>
+                        
+                        <!-- View Mode Toggle -->
+                        <div class="view-mode-controls">
+                            <button class="view-mode-btn active" data-view="masonry" title="Masonry View">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="14" y="3" width="7" height="4" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="14" y="10" width="7" height="11" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="3" y="13" width="7" height="8" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                            </button>
+                            <button class="view-mode-btn" data-view="grid" title="Grid View">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <rect x="3" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="14" y="3" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="3" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                    <rect x="14" y="14" width="7" height="7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <!-- Advanced Masonry Grid -->
+                    <div class="advanced-masonry-grid" id="masonryGrid">
+                        
+                        <!-- Web Design Items -->
+                        <div class="masonry-card web" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                            <div class="card-background" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%)"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="category-badge web">Web Design</div>
+                                    <button class="like-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card-main">
+                                    <h3>E-commerce Platform</h3>
+                                    <p>Modern shopping experience with advanced cart functionality</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">React</span>
+                                        <span class="tech-tag">Node.js</span>
+                                        <span class="tech-tag">Stripe</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-stats">
+                                        <span class="stat">
+                                            <span class="stat-icon">👁️</span>
+                                            <span class="stat-value">1.2k</span>
+                                        </span>
+                                        <span class="stat">
+                                            <span class="stat-icon">❤️</span>
+                                            <span class="stat-value">89</span>
+                                        </span>
+                                    </div>
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+
+                        <div class="masonry-card mobile tall" data-category="mobile" data-aos="fade-up" data-aos-delay="200">
+                            <div class="card-background" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%)"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="category-badge mobile">Mobile App</div>
+                                    <button class="like-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card-main">
+                                    <h3>Fitness Tracking App</h3>
+                                    <p>Comprehensive health and fitness tracking with social features and gamification</p>
+                                    <div class="feature-list">
+                                        <span class="feature">🏃‍♂️ Activity Tracking</span>
+                                        <span class="feature">📊 Analytics</span>
+                                        <span class="feature">👥 Social Features</span>
+                                        <span class="feature">🏆 Achievements</span>
+                                    </div>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">React Native</span>
+                                        <span class="tech-tag">Firebase</span>
+                                        <span class="tech-tag">HealthKit</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-stats">
+                                        <span class="stat">
+                                            <span class="stat-icon">📱</span>
+                                            <span class="stat-value">50k+ Downloads</span>
+                                        </span>
+                                    </div>
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+
+                        <div class="masonry-card branding" data-category="branding" data-aos="fade-up" data-aos-delay="300">
+                            <div class="card-background" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="category-badge branding">Branding</div>
+                                    <button class="like-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card-main">
+                                    <h3>TechStart Identity</h3>
+                                    <p>Complete brand identity for innovative startup</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Logo Design</span>
+                                        <span class="tech-tag">Brand Guidelines</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-stats">
+                                        <span class="stat">
+                                            <span class="stat-icon">🎨</span>
+                                            <span class="stat-value">Brand Kit</span>
+                                        </span>
+                                    </div>
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+
+                        <div class="masonry-card web wide" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                            <div class="card-background" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%)"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="category-badge web">Web Design</div>
+                                    <button class="like-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card-main">
+                                    <h3>Corporate Dashboard</h3>
+                                    <p>Advanced analytics dashboard with real-time data visualization and reporting</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Vue.js</span>
+                                        <span class="tech-tag">D3.js</span>
+                                        <span class="tech-tag">WebSocket</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-stats">
+                                        <span class="stat">
+                                            <span class="stat-icon">📊</span>
+                                            <span class="stat-value">Real-time</span>
+                                        </span>
+                                    </div>
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+
+                        <div class="masonry-card mobile" data-category="mobile" data-aos="fade-up" data-aos-delay="500">
+                            <div class="card-background" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%)"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="category-badge mobile">Mobile App</div>
+                                    <button class="like-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card-main">
+                                    <h3>Food Delivery App</h3>
+                                    <p>Seamless food ordering with location tracking</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Flutter</span>
+                                        <span class="tech-tag">Firebase</span>
+                                        <span class="tech-tag">Maps API</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-stats">
+                                        <span class="stat">
+                                            <span class="stat-icon">🚚</span>
+                                            <span class="stat-value">Live Tracking</span>
+                                        </span>
+                                    </div>
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+
+                        <div class="masonry-card branding" data-category="branding" data-aos="fade-up" data-aos-delay="600">
+                            <div class="card-background" style="background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)"></div>
+                            <div class="card-content">
+                                <div class="card-header">
+                                    <div class="category-badge branding">Branding</div>
+                                    <button class="like-btn">
+                                        <svg viewBox="0 0 24 24" width="16" height="16">
+                                            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="currentColor"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="card-main">
+                                    <h3>Eco Brand Package</h3>
+                                    <p>Sustainable brand identity with eco-friendly focus</p>
+                                    <div class="tech-stack">
+                                        <span class="tech-tag">Sustainable</span>
+                                        <span class="tech-tag">Packaging</span>
+                                    </div>
+                                </div>
+                                <div class="card-footer">
+                                    <div class="project-stats">
+                                        <span class="stat">
+                                            <span class="stat-icon">🌱</span>
+                                            <span class="stat-value">Eco-friendly</span>
+                                        </span>
+                                    </div>
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                            <div class="card-overlay"></div>
+                        </div>
+
+                    </div>
+                    
+                    <!-- Gallery Statistics -->
+                    <div class="gallery-stats" data-aos="fade-up" data-aos-delay="700">
+                        <div class="stat-card">
+                            <div class="stat-icon">📊</div>
+                            <div class="stat-content">
+                                <div class="stat-number" id="totalProjects">15</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🏆</div>
+                            <div class="stat-content">
+                                <div class="stat-number">98%</div>
+                                <div class="stat-label">Success Rate</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⚡</div>
+                            <div class="stat-content">
+                                <div class="stat-number">50ms</div>
+                                <div class="stat-label">Filter Speed</div>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🎨</div>
+                            <div class="stat-content">
+                                <div class="stat-number">Infinite</div>
+                                <div class="stat-label">Possibilities</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-content" data-aos="fade-up">
+                    <h2>Ready to Implement These Features?</h2>
+                    <p>Let's discuss how these advanced features can elevate your web presence</p>
+                    <div class="cta-buttons">
+                        <a href="index.html#contact" class="cta-btn primary">Start Your Project</a>
+                        <a href="index.html" class="cta-btn secondary">Back to Home</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Flixon</h3>
+                    <p>Advanced web development features showcase</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Features</h4>
+                    <ul>
+                        <li><a href="#hero-backgrounds">Hero Backgrounds</a></li>
+                        <li><a href="#image-carousel">Image Carousels</a></li>
+                        <li><a href="#parallax-scrolling">Parallax Effects</a></li>
+                        <li><a href="#scroll-animations">Scroll Animations</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Interactive</h4>
+                    <ul>
+                        <li><a href="#image-carousel">Advanced Carousels</a></li>
+                        <li><a href="#scroll-animations">Scroll Animations</a></li>
+                        <li><a href="#animated-counters">Animated Counters</a></li>
+                        <li><a href="#masonry-gallery">Masonry Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#portfolio">Portfolio</a></li>
+                        <li><a href="index.html#about">About</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Flixon. All rights reserved. | Features Showcase</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/features.js"></script>
+</body>
+</html>

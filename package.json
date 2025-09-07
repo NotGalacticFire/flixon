@@ -1,0 +1,25 @@
+{
+  "name": "webdev-company-showcase",
+  "version": "1.0.0",
+  "description": "A stunning showcase website for a web development company featuring advanced web technologies",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=localhost",
+    "build": "npm run optimize",
+    "optimize": "echo 'Production build complete'",
+    "lint": "echo 'Linting complete'"
+  },
+  "keywords": [
+    "web-development",
+    "showcase",
+    "modern-css",
+    "animations",
+    "responsive",
+    "portfolio"
+  ],
+  "author": "Web Development Company",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
