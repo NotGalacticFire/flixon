@@ -3,7 +3,9 @@
     "allow": [
       "Bash(find:*)",
       "Bash(grep:*)",
-      "WebFetch(domain:thefirstthelast.agency)"
+      "WebFetch(domain:thefirstthelast.agency)",
+      "Bash(claude doctor)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []

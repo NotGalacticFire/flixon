@@ -14,10 +14,15 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/advanced-effects.css">
-    <link rel="stylesheet" href="css/customizer.css">
     <link rel="stylesheet" href="css/features.css">
+    <link rel="stylesheet" href="css/clean-theme.css">
+    <link rel="stylesheet" href="css/modern-design.css">
+    <link rel="stylesheet" href="css/revolutionary-portfolio.css">
+    <link rel="stylesheet" href="css/revolutionary-sections.css">
 </head>
 <body>
+    <!-- Page Transition Overlay -->
+    <div id="page-transition" aria-hidden="true"></div>
 
     <nav id="main-nav" class="navbar">
         <div class="nav-container">
@@ -26,21 +31,12 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
                 <li><a href="#services" class="nav-link">Services</a></li>
-                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
             <div class="nav-controls">
-                <button id="customizer-toggle" class="customizer-toggle" aria-label="Customize colors">
-                    <span class="customizer-icon">
-                        <svg viewBox="0 0 24 24" width="18" height="18">
-                            <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
-                            <path d="M17 4a2 2 0 0 0 2 2a2 2 0 0 0 -2 2a2 2 0 0 0 -2 -2a2 2 0 0 0 2 -2"/>
-                            <path d="M19 11h2m-1 -1v2"/>
-                        </svg>
-                    </span>
-                </button>
                 <button class="mobile-menu-toggle" aria-label="Toggle menu">
                     <span></span>
                     <span></span>
@@ -51,45 +47,76 @@
     </nav>
 
     <main>
-        <section id="home" class="hero-section">
+            <section id="home" class="hero-section modern-hero">
             <div class="hero-background">
-                <video autoplay muted loop class="hero-video" poster="assets/images/hero-poster.jpg">
-                    <source src="assets/videos/hero.mp4" type="video/mp4">
-                    <source src="assets/videos/hero.webm" type="video/webm">
-                    <!-- Fallback image if video fails to load -->
-                    <img src="assets/images/hero-poster.jpg" alt="Hero Background" style="width:100%;height:100%;object-fit:cover;">
-                </video>
+                <!-- Add your hero image here: Replace with your own high-resolution image -->
+                <img class="hero-image" src="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&w=1920&q=80" alt="Modern digital workspace" />
                 <div class="hero-overlay"></div>
+                <div class="hero-grain"></div>
             </div>
+
             <div class="hero-content">
-                <div class="hero-text" data-aos="fade-up">
-                    <h1 class="hero-title">
-                        <span class="title-line text-shimmer">Streamlined Digital Experiences</span>
-                        <span class="title-line">Built to Perform</span>
+                <div class="hero-main">
+                    <div class="hero-badge" data-scroll-reveal>
+                        <span class="badge-dot"></span>
+                        <span>Available for projects</span>
+                    </div>
+
+                    <h1 class="hero-title" data-scroll-reveal>
+                        <span class="title-line">Crafting</span>
+                        <span class="title-line gradient-text">Exceptional</span>
+                        <span class="title-line">Digital Experiences</span>
                     </h1>
-                    <p class="hero-subtitle">We build stunning, high-performance websites that drive <span id="heroTyping" class="typing" data-words='["results","growth","conversations","engagement","speed"]'></span></p>
-                    <div class="hero-cta">
-                        <button class="btn-advanced magnetic neon-glow">Start Your Project</button>
-                        <button class="btn-liquid"><span>View Our Work</span></button>
+
+                    <p class="hero-description" data-scroll-reveal>
+                        We design and develop premium websites that captivate users with
+                        <span class="highlight-text">smooth animations</span>, modern aesthetics, and
+                        flawless performance across all devices.
+                    </p>
+
+                    <div class="hero-actions" data-scroll-reveal>
+                        <a href="#portfolio" class="btn-primary magnetic-btn">
+                            <span>View Our Work</span>
+                            <div class="btn-arrow">
+                                <svg viewBox="0 0 24 24" width="16" height="16">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                        </a>
+                        <a href="#contact" class="btn-secondary magnetic-btn">
+                            <span>Start Project</span>
+                        </a>
                     </div>
                 </div>
-                <div class="hero-stats" data-aos="fade-up" data-aos-delay="200">
-                    <div class="stat-item">
-                        <span class="stat-number" data-target="150">0</span>
-                        <span class="stat-label">Projects Completed</span>
+
+                <div class="hero-sidebar">
+                    <div class="hero-stats">
+                        <div class="stat-item" data-scroll-reveal>
+                            <div class="stat-number" data-counter="250">0</div>
+                            <div class="stat-label">Projects Delivered</div>
+                        </div>
+                        <div class="stat-item" data-scroll-reveal>
+                            <div class="stat-number" data-counter="99">0</div>
+                            <div class="stat-label">Client Satisfaction</div>
+                        </div>
+                        <div class="stat-item" data-scroll-reveal>
+                            <div class="stat-number" data-counter="7">0</div>
+                            <div class="stat-label">Years Experience</div>
+                        </div>
                     </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-target="98">0</span>
-                        <span class="stat-label">Client Satisfaction %</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-target="5">0</span>
-                        <span class="stat-label">Years Experience</span>
-                    </div>
+                </div>
+
+                <div class="hero-scroll-indicator">
+                    <div class="scroll-line"></div>
+                    <span class="scroll-text">Scroll to explore</span>
+                    <div class="scroll-arrow"></div>
                 </div>
             </div>
-            <div class="scroll-indicator">
-                <div class="scroll-arrow"></div>
+
+            <div class="hero-decorations">
+                <div class="floating-element element-1"></div>
+                <div class="floating-element element-2"></div>
+                <div class="floating-element element-3"></div>
             </div>
         </section>
 
@@ -192,58 +219,296 @@
             </div>
         </section>
 
+        <!-- Revolutionary Portfolio Section -->
+        <section id="portfolio" class="revolutionary-portfolio">
+            <div class="container-wide">
+                <div class="portfolio-header" data-scroll-reveal>
+                    <div class="header-left">
+                        <div class="section-badge pulse">
+                            <span>Portfolio</span>
+                            <div class="badge-glow"></div>
+                        </div>
+                        <h2 class="section-title split-text">Selected Work</h2>
+                        <p class="section-description">
+                            A showcase of our finest digital experiences,<br>
+                            crafted with precision and passion.
+                        </p>
+                    </div>
+                    <div class="header-right">
+                        <div class="portfolio-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-counter="47">0</div>
+                                <div class="stat-label">Projects</div>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-counter="12">0</div>
+                                <div class="stat-label">Awards</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-masonry">
+                    <!-- Featured Large Project -->
+                    <div class="portfolio-piece featured magnetic-item" data-scroll-reveal>
+                        <div class="piece-container">
+                            <div class="piece-media">
+                                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=800&fit=crop&q=80"
+                                     alt="E-commerce Platform - Revolutionary shopping experience">
+                                <div class="media-overlay"></div>
+                                <div class="piece-gradient"></div>
+                            </div>
+                            <div class="piece-info">
+                                <div class="info-header">
+                                    <span class="piece-category">Featured Project</span>
+                                    <span class="piece-year">2024</span>
+                                </div>
+                                <h3 class="piece-title">E-commerce Revolution</h3>
+                                <p class="piece-description">Next-generation shopping platform with AI recommendations and immersive 3D product visualization</p>
+                                <div class="piece-tech">
+                                    <span class="tech-tag">React</span>
+                                    <span class="tech-tag">Three.js</span>
+                                    <span class="tech-tag">GSAP</span>
+                                    <span class="tech-tag">Node.js</span>
+                                </div>
+                            </div>
+                            <div class="piece-hover-elements">
+                                <div class="hover-gradient"></div>
+                                <div class="hover-particles">
+                                    <div class="particle"></div>
+                                    <div class="particle"></div>
+                                    <div class="particle"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Medium Projects -->
+                    <div class="portfolio-piece medium magnetic-item" data-scroll-reveal>
+                        <div class="piece-container">
+                            <div class="piece-media">
+                                <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop&q=80"
+                                     alt="HealthTrack App - Intuitive wellness companion">
+                                <div class="media-overlay"></div>
+                                <div class="piece-gradient"></div>
+                            </div>
+                            <div class="piece-info">
+                                <div class="info-header">
+                                    <span class="piece-category">Mobile App</span>
+                                    <span class="piece-year">2024</span>
+                                </div>
+                                <h3 class="piece-title">HealthTrack Pro</h3>
+                                <p class="piece-description">Comprehensive wellness app with real-time health monitoring</p>
+                                <div class="piece-tech">
+                                    <span class="tech-tag">React Native</span>
+                                    <span class="tech-tag">TypeScript</span>
+                                    <span class="tech-tag">Firebase</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-piece medium magnetic-item" data-scroll-reveal>
+                        <div class="piece-container">
+                            <div class="piece-media">
+                                <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop&q=80"
+                                     alt="TechCorp Rebrand - Complete visual identity transformation">
+                                <div class="media-overlay"></div>
+                                <div class="piece-gradient"></div>
+                            </div>
+                            <div class="piece-info">
+                                <div class="info-header">
+                                    <span class="piece-category">Brand Identity</span>
+                                    <span class="piece-year">2024</span>
+                                </div>
+                                <h3 class="piece-title">TechCorp Rebrand</h3>
+                                <p class="piece-description">Complete visual identity system for emerging AI company</p>
+                                <div class="piece-tech">
+                                    <span class="tech-tag">Branding</span>
+                                    <span class="tech-tag">Motion Design</span>
+                                    <span class="tech-tag">3D Modeling</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Small Projects -->
+                    <div class="portfolio-piece small magnetic-item" data-scroll-reveal>
+                        <div class="piece-container">
+                            <div class="piece-media">
+                                <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=600&h=400&fit=crop&q=80"
+                                     alt="Artist Collective - Creative portfolio platform">
+                                <div class="media-overlay"></div>
+                                <div class="piece-gradient"></div>
+                            </div>
+                            <div class="piece-info">
+                                <div class="info-header">
+                                    <span class="piece-category">Web Platform</span>
+                                    <span class="piece-year">2023</span>
+                                </div>
+                                <h3 class="piece-title">Artist Collective</h3>
+                                <p class="piece-description">Interactive gallery with WebGL effects</p>
+                                <div class="piece-tech">
+                                    <span class="tech-tag">Three.js</span>
+                                    <span class="tech-tag">WebGL</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-piece small magnetic-item" data-scroll-reveal>
+                        <div class="piece-container">
+                            <div class="piece-media">
+                                <img src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=600&h=400&fit=crop&q=80"
+                                     alt="FinanceFlow Dashboard - Real-time analytics platform">
+                                <div class="media-overlay"></div>
+                                <div class="piece-gradient"></div>
+                            </div>
+                            <div class="piece-info">
+                                <div class="info-header">
+                                    <span class="piece-category">Dashboard</span>
+                                    <span class="piece-year">2023</span>
+                                </div>
+                                <h3 class="piece-title">FinanceFlow</h3>
+                                <p class="piece-description">Real-time analytics dashboard</p>
+                                <div class="piece-tech">
+                                    <span class="tech-tag">Vue.js</span>
+                                    <span class="tech-tag">D3.js</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="portfolio-piece small magnetic-item" data-scroll-reveal>
+                        <div class="piece-container">
+                            <div class="piece-media">
+                                <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop&q=80"
+                                     alt="EcoTech Solutions - Sustainable technology showcase">
+                                <div class="media-overlay"></div>
+                                <div class="piece-gradient"></div>
+                            </div>
+                            <div class="piece-info">
+                                <div class="info-header">
+                                    <span class="piece-category">Web Design</span>
+                                    <span class="piece-year">2023</span>
+                                </div>
+                                <h3 class="piece-title">EcoTech Solutions</h3>
+                                <p class="piece-description">Sustainable technology showcase</p>
+                                <div class="piece-tech">
+                                    <span class="tech-tag">Next.js</span>
+                                    <span class="tech-tag">Framer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-footer" data-scroll-reveal>
+                    <div class="footer-content">
+                        <h3 class="footer-title">Ready to create something extraordinary?</h3>
+                        <p class="footer-description">Let's discuss your next project and bring your vision to life.</p>
+                    </div>
+                    <div class="footer-action">
+                        <a href="#contact" class="portfolio-cta magnetic-btn">
+                            <span class="cta-text">Start Your Project</span>
+                            <div class="cta-arrow">
+                                <svg viewBox="0 0 24 24" width="20" height="20">
+                                    <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                                </svg>
+                            </div>
+                            <div class="cta-background"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="portfolio-background">
+                <div class="bg-gradient-1"></div>
+                <div class="bg-gradient-2"></div>
+                <div class="bg-particles">
+                    <div class="bg-particle"></div>
+                    <div class="bg-particle"></div>
+                    <div class="bg-particle"></div>
+                </div>
+            </div>
+        </section>
+
         <section id="services" class="services-section">
             <div class="container">
-                <div class="section-header" data-aos="fade-up">
-                    <h2 class="section-title">Our Services</h2>
-                    <p class="section-subtitle">Comprehensive solutions for your digital needs</p>
+                <div class="section-intro" data-scroll-reveal>
+                    <div class="section-badge">
+                        <span>Services</span>
+                    </div>
+                    <h2 class="section-title">What We Do</h2>
+                    <p class="section-description">
+                        From concept to launch, we provide comprehensive digital solutions
+                        that drive results and exceed expectations.
+                    </p>
                 </div>
                 
                 <div class="services-grid">
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card" data-scroll-reveal>
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <div class="icon-bg"></div>
+                            <svg viewBox="0 0 24 24" width="24" height="24">
                                 <path d="M7 3H17C18.1 3 19 3.9 19 5V19C19 20.1 18.1 21 17 21H7C5.9 21 5 20.1 5 19V5C5 3.9 5.9 3 7 3M7 5V8H17V5H7M17 10H7V12H17V10M17 14H7V16H17V14Z"/>
                             </svg>
                         </div>
-                        <h3>Web Design</h3>
-                        <p>Creating visually stunning and user-friendly designs that convert visitors into customers.</p>
+                        <h3>UI/UX Design</h3>
+                        <p>User-centered design that converts visitors into customers through intuitive interfaces and seamless experiences.</p>
                         <ul class="service-features">
-                            <li>Responsive Design</li>
-                            <li>User Experience (UX)</li>
-                            <li>Brand Integration</li>
+                            <li>User Research & Testing</li>
+                            <li>Responsive Design Systems</li>
+                            <li>Interactive Prototypes</li>
                         </ul>
+                        <div class="service-arrow">
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
                     </div>
                     
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card" data-scroll-reveal>
                         <div class="service-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
+                            <div class="icon-bg"></div>
+                            <svg viewBox="0 0 24 24" width="24" height="24">
                                 <path d="M8 3C9.1 3 10 3.9 10 5V9L12 11L14 9V5C14 3.9 14.9 3 16 3S18 3.9 18 5V13C18 16.31 15.31 19 12 19S6 16.31 6 13V5C6 3.9 6.9 3 8 3Z"/>
-                                <path d="M4 15L8 19L12 15L16 19L20 15"/>
                             </svg>
                         </div>
                         <h3>Web Development</h3>
-                        <p>Building fast, secure, and scalable websites using the latest technologies and best practices.</p>
+                        <p>Fast, secure, and scalable websites built with modern technologies and optimized for peak performance.</p>
                         <ul class="service-features">
-                            <li>Modern Frameworks</li>
+                            <li>Modern Framework Integration</li>
                             <li>Performance Optimization</li>
-                            <li>SEO Friendly</li>
+                            <li>SEO & Accessibility</li>
                         </ul>
-                    </div>
-                    
-                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="service-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-                                <path d="M7 2C5.9 2 5 2.9 5 4V20C5 21.1 5.9 22 7 22H17C18.1 22 19 21.1 19 20V4C19 2.9 18.1 2 17 2H7M7 4H17V17H7V4M12 18.5C12.8 18.5 13.5 19.2 13.5 20S12.8 21.5 12 21.5 10.5 20.8 10.5 20 11.2 18.5 12 18.5Z"/>
+                        <div class="service-arrow">
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
                             </svg>
                         </div>
-                        <h3>Mobile Development</h3>
-                        <p>Creating native and cross-platform mobile applications that deliver exceptional user experiences.</p>
+                    </div>
+                    
+                    <div class="service-card" data-scroll-reveal>
+                        <div class="service-icon">
+                            <div class="icon-bg"></div>
+                            <svg viewBox="0 0 24 24" width="24" height="24">
+                                <path d="M12 2L13.09 8.26L18 7L16.74 12.74L22 14L15.74 15.09L17 21L11.26 19.74L10 24L8.74 17.74L2 16L8.26 14.91L7 9L12.74 10.26L12 2Z"/>
+                            </svg>
+                        </div>
+                        <h3>Brand & Animation</h3>
+                        <p>Captivating visual identities and smooth animations that bring your brand to life and engage users.</p>
                         <ul class="service-features">
-                            <li>iOS & Android</li>
-                            <li>Cross-Platform</li>
-                            <li>Progressive Web Apps</li>
+                            <li>Brand Identity Design</li>
+                            <li>Motion Graphics & Animation</li>
+                            <li>Interactive Experiences</li>
                         </ul>
+                        <div class="service-arrow">
+                            <svg viewBox="0 0 24 24" width="16" height="16">
+                                <path d="M5 12h14M12 5l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none"/>
+                            </svg>
+                        </div>
                     </div>
                     
                     <div class="service-card" data-aos="fade-up" data-aos-delay="400">
@@ -634,329 +899,409 @@
             </div>
         </div>
 
-        <section id="features" class="tftl-features">
-            <!-- Hero Introduction -->
-            <div class="hero-intro" data-scroll-section>
-                <div class="container">
-                    <div class="intro-content">
-                        <h1 class="intro-title">
-                            <span class="intro-line">Beautiful</span>
-                            <span class="intro-line">Experiences</span>
-                            <span class="intro-line">Crafted</span>
-                        </h1>
-                        <div class="intro-subtitle">
-                            <p>We create digital experiences that combine stunning design with powerful functionality</p>
+        <!-- Revolutionary About Section -->
+        <section id="about" class="revolutionary-about">
+            <div class="container-wide">
+                <div class="about-grid">
+                    <div class="about-narrative" data-scroll-reveal>
+                        <div class="narrative-header">
+                            <div class="section-badge animated-badge">
+                                <span>Our Story</span>
+                                <div class="badge-particles">
+                                    <div class="particle"></div>
+                                    <div class="particle"></div>
+                                </div>
+                            </div>
+                            <h2 class="section-title split-text">Crafting Digital Excellence Since 2019</h2>
                         </div>
-                        <div class="intro-cta">
-                            <button class="explore-btn">
-                                <span>Explore Our Work</span>
-                                <div class="btn-bg"></div>
-                            </button>
+
+                        <div class="story-timeline">
+                            <div class="timeline-item" data-scroll-reveal data-timeline="2019">
+                                <div class="timeline-year">2019</div>
+                                <div class="timeline-content">
+                                    <h3>The Beginning</h3>
+                                    <p>Founded with a vision to create digital experiences that push the boundaries of what's possible. Started as a small team of passionate designers and developers.</p>
+                                </div>
+                                <div class="timeline-visual">
+                                    <div class="visual-dot"></div>
+                                    <div class="visual-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-scroll-reveal data-timeline="2021">
+                                <div class="timeline-year">2021</div>
+                                <div class="timeline-content">
+                                    <h3>Award Recognition</h3>
+                                    <p>Received our first Awwwards Site of the Day and began collaborating with Fortune 500 companies to reimagine their digital presence.</p>
+                                </div>
+                                <div class="timeline-visual">
+                                    <div class="visual-dot award"></div>
+                                    <div class="visual-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-scroll-reveal data-timeline="2023">
+                                <div class="timeline-year">2023</div>
+                                <div class="timeline-content">
+                                    <h3>Global Expansion</h3>
+                                    <p>Expanded internationally with offices in London and Tokyo, delivering cutting-edge solutions for clients worldwide.</p>
+                                </div>
+                                <div class="timeline-visual">
+                                    <div class="visual-dot global"></div>
+                                    <div class="visual-line"></div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item" data-scroll-reveal data-timeline="2024">
+                                <div class="timeline-year">2024</div>
+                                <div class="timeline-content">
+                                    <h3>Innovation Leaders</h3>
+                                    <p>Leading the industry in AI-powered design tools and immersive web experiences, setting new standards for digital craftsmanship.</p>
+                                </div>
+                                <div class="timeline-visual">
+                                    <div class="visual-dot innovation"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="hero-visual">
-                    <div class="floating-elements">
-                        <div class="floating-circle circle-1"></div>
-                        <div class="floating-circle circle-2"></div>
-                        <div class="floating-circle circle-3"></div>
+
+                    <div class="about-showcase" data-scroll-reveal>
+                        <div class="showcase-stats">
+                            <div class="stat-group">
+                                <div class="stat-item large">
+                                    <div class="stat-number" data-counter="150">0</div>
+                                    <div class="stat-label">Projects Delivered</div>
+                                    <div class="stat-decoration"></div>
+                                </div>
+                                <div class="stat-item">
+                                    <div class="stat-number" data-counter="98">0</div>
+                                    <div class="stat-label">Client Satisfaction</div>
+                                </div>
+                            </div>
+
+                            <div class="stat-group">
+                                <div class="stat-item">
+                                    <div class="stat-number" data-counter="12">0</div>
+                                    <div class="stat-label">Awards Won</div>
+                                </div>
+                                <div class="stat-item large">
+                                    <div class="stat-number" data-counter="24">0</div>
+                                    <div class="stat-label">Team Members</div>
+                                    <div class="stat-decoration"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="showcase-skills">
+                            <h3 class="skills-title">Our Expertise</h3>
+                            <div class="skill-items">
+                                <div class="skill-item" data-skill="95">
+                                    <div class="skill-info">
+                                        <span class="skill-name">UI/UX Design</span>
+                                        <span class="skill-percentage">95%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill"></div>
+                                        <div class="skill-glow"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item" data-skill="92">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Frontend Development</span>
+                                        <span class="skill-percentage">92%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill"></div>
+                                        <div class="skill-glow"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item" data-skill="88">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Motion & Animation</span>
+                                        <span class="skill-percentage">88%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill"></div>
+                                        <div class="skill-glow"></div>
+                                    </div>
+                                </div>
+
+                                <div class="skill-item" data-skill="90">
+                                    <div class="skill-info">
+                                        <span class="skill-name">Brand Strategy</span>
+                                        <span class="skill-percentage">90%</span>
+                                    </div>
+                                    <div class="skill-track">
+                                        <div class="skill-fill"></div>
+                                        <div class="skill-glow"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Advanced Video Hero -->
-            <div class="video-hero-section" data-scroll-section>
-                <div class="video-hero-container">
-                    <div class="video-wrapper">
-                        <video 
-                            class="hero-video" 
-                            id="heroVideo"
-                            muted 
-                            loop 
-                            playsinline
-                            preload="auto"
-                            poster="assets/images/tftl-hero-poster.jpg"
-                        >
-                            <source src="assets/videos/tftl-hero.mp4" type="video/mp4">
-                            <source src="assets/videos/tftl-hero.webm" type="video/webm">
-                            <!-- Fallback image if video fails to load -->
-                            <img src="assets/images/tftl-hero-poster.jpg" alt="Hero Video Background" style="width:100%;height:100%;object-fit:cover;">
-                        </video>
-                        <div class="video-overlay"></div>
-                    </div>
-                    
-                    <div class="video-controls">
-                        <div class="controls-wrapper">
-                            <button class="play-pause-btn" id="playPauseBtn" aria-label="Play video" aria-pressed="false">
-                                <svg class="play-icon" viewBox="0 0 24 24">
-                                    <path d="M8 5v14l11-7z"/>
-                                </svg>
-                                <svg class="pause-icon" viewBox="0 0 24 24">
-                                    <path d="M6 4h4v16H6V4zm8 0h4v16h-4V4z"/>
-                                </svg>
-                            </button>
-                            
-                            <div class="timeline-container">
-                                <div class="timeline-track">
-                                    <div class="timeline-progress"></div>
-                                </div>
-                            </div>
-                            
-                            <button class="volume-btn" id="volumeBtn" aria-label="Mute video" aria-pressed="true">
-                                <svg class="volume-on" viewBox="0 0 24 24">
-                                    <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
-                                </svg>
-                                <svg class="volume-off" viewBox="0 0 24 24">
-                                    <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </div>
-                    
-                    <div class="video-content">
-                        <div class="container">
-                            <div class="video-text">
-                                <h2 class="video-title">
-                                    <span>Immersive</span>
-                                    <span>Digital</span>
-                                    <span>Experiences</span>
-                                </h2>
-                                <p class="video-description">Every pixel crafted with precision, every interaction designed to delight</p>
-                            </div>
-                        </div>
-                    </div>
+            <div class="about-background">
+                <div class="bg-mesh"></div>
+                <div class="bg-orbs">
+                    <div class="orb orb-1"></div>
+                    <div class="orb orb-2"></div>
                 </div>
             </div>
+        </section>
 
-            <!-- Beautiful Carousel -->
-            <div class="carousel-section" data-scroll-section>
-                <div class="container">
-                    <div class="section-header">
-                        <h2 class="section-title">
-                            <span>Our</span>
-                            <span>Featured</span>
-                            <span>Projects</span>
-                        </h2>
-                        <p class="section-subtitle">Discover the work that defines our creative excellence</p>
+        <!-- Dynamic Team Section -->
+        <section id="team" class="dynamic-team">
+            <div class="container-wide">
+                <div class="team-header" data-scroll-reveal>
+                    <div class="header-content">
+                        <div class="section-badge magnetic-badge">
+                            <span>Team</span>
+                        </div>
+                        <h2 class="section-title split-text">Meet the Visionaries</h2>
+                        <p class="section-description">
+                            Passionate creators, strategic thinkers, and technical innovators<br>
+                            working together to push the boundaries of digital design.
+                        </p>
                     </div>
-                    
-                    <div class="tftl-carousel" id="mainCarousel" role="region" aria-roledescription="carousel" aria-label="Featured Projects" tabindex="0">
-                        <div class="carousel-container" data-tftl-carousel>
-                            <div class="carousel-track">
-                                <div class="carousel-wrapper">
-                                <!-- Slide 1 -->
-                                <div class="carousel-slide active">
-                                    <div class="slide-image">
-                                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="Project 1" />
-                                        <div class="image-overlay"></div>
-                                    </div>
-                                    <div class="slide-content">
-                                        <div class="slide-category">Web Design</div>
-                                        <h3 class="slide-title">E-commerce Revolution</h3>
-                                        <p class="slide-description">A complete digital transformation for a luxury fashion brand</p>
-                                        <div class="slide-tags">
-                                            <span class="tag">UI/UX</span>
-                                            <span class="tag">Development</span>
-                                            <span class="tag">Branding</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Slide 2 -->
-                                <div class="carousel-slide">
-                                    <div class="slide-image">
-                                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop" alt="Project 2" />
-                                        <div class="image-overlay"></div>
-                                    </div>
-                                    <div class="slide-content">
-                                        <div class="slide-category">Mobile App</div>
-                                        <h3 class="slide-title">Wellness Platform</h3>
-                                        <p class="slide-description">Connecting users with personalized health and wellness experiences</p>
-                                        <div class="slide-tags">
-                                            <span class="tag">iOS</span>
-                                            <span class="tag">Android</span>
-                                            <span class="tag">Backend</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Slide 3 -->
-                                <div class="carousel-slide">
-                                    <div class="slide-image">
-                                        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&h=600&fit=crop" alt="Project 3" />
-                                        <div class="image-overlay"></div>
-                                    </div>
-                                    <div class="slide-content">
-                                        <div class="slide-category">Branding</div>
-                                        <h3 class="slide-title">Tech Startup Identity</h3>
-                                        <p class="slide-description">Building a comprehensive brand identity for an AI company</p>
-                                        <div class="slide-tags">
-                                            <span class="tag">Logo</span>
-                                            <span class="tag">Guidelines</span>
-                                            <span class="tag">Marketing</span>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                                <!-- Slide 4 -->
-                                <div class="carousel-slide">
-                                    <div class="slide-image">
-                                        <img src="https://images.unsplash.com/photo-1533750349088-cd871a92f312?w=800&h=600&fit=crop" alt="Project 4" />
-                                        <div class="image-overlay"></div>
-                                    </div>
-                                    <div class="slide-content">
-                                        <div class="slide-category">Web Platform</div>
-                                        <h3 class="slide-title">Creative Portfolio</h3>
-                                        <p class="slide-description">A dynamic portfolio platform for digital artists and creators</p>
-                                        <div class="slide-tags">
-                                            <span class="tag">React</span>
-                                            <span class="tag">Animation</span>
-                                            <span class="tag">CMS</span>
-                                        </div>
-                                    </div>
-                                </div>
+                </div>
+
+                <div class="team-showcase">
+                    <div class="team-member featured magnetic-item" data-scroll-reveal>
+                        <div class="member-image">
+                            <div class="image-placeholder">
+                                <!-- Replace with your team member photo -->
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=600&fit=crop&q=80"
+                                     alt="Alex Thompson - Creative Director & Co-Founder">
+                                <div class="image-overlay"></div>
                             </div>
+                            <div class="member-decoration">
+                                <div class="decoration-ring"></div>
+                                <div class="decoration-dots">
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                    <div class="dot"></div>
+                                </div>
                             </div>
                         </div>
-                        
-                        <div class="carousel-controls">
-                            <div class="carousel-navigation">
-                                <button class="nav-btn prev-btn" id="prevBtn" aria-label="Previous slide">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"/>
+                        <div class="member-info">
+                            <h3 class="member-name">Alex Thompson</h3>
+                            <p class="member-title">Creative Director & Co-Founder</p>
+                            <p class="member-bio">Visionary leader with 12+ years of experience crafting award-winning digital experiences for Fortune 500 companies.</p>
+                            <div class="member-social">
+                                <a href="#" class="social-link" aria-label="LinkedIn">
+                                    <svg viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
                                     </svg>
-                                </button>
-                                <button class="nav-btn next-btn" id="nextBtn" aria-label="Next slide">
-                                    <svg viewBox="0 0 24 24">
-                                        <path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/>
+                                </a>
+                                <a href="#" class="social-link" aria-label="Twitter">
+                                    <svg viewBox="0 0 24 24" width="20" height="20">
+                                        <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/>
                                     </svg>
-                                </button>
+                                </a>
                             </div>
-                            
-                            <div class="carousel-pagination">
-                                <div class="pagination-dots">
-                                    <button class="dot active" data-slide="0" aria-label="Go to slide 1" aria-pressed="true"></button>
-                                    <button class="dot" data-slide="1" aria-label="Go to slide 2" aria-pressed="false"></button>
-                                    <button class="dot" data-slide="2" aria-label="Go to slide 3" aria-pressed="false"></button>
-                                    <button class="dot" data-slide="3" aria-label="Go to slide 4" aria-pressed="false"></button>
+                        </div>
+                    </div>
+
+                    <div class="team-grid">
+                        <div class="team-member compact magnetic-item" data-scroll-reveal>
+                            <div class="member-image">
+                                <div class="image-placeholder">
+                                    <!-- Replace with your team member photo -->
+                                    <img src="https://images.unsplash.com/photo-1494790108755-2616c6d1a30a?w=400&h=400&fit=crop&q=80"
+                                         alt="Sarah Chen - Lead UX Designer">
+                                    <div class="image-overlay"></div>
                                 </div>
-                                <div class="pagination-progress">
-                                    <div class="progress-bar"></div>
+                            </div>
+                            <div class="member-info">
+                                <h4 class="member-name">Sarah Chen</h4>
+                                <p class="member-title">Lead UX Designer</p>
+                                <p class="member-bio">User experience architect specializing in conversion optimization and behavioral psychology.</p>
+                            </div>
+                        </div>
+
+                        <div class="team-member compact magnetic-item" data-scroll-reveal>
+                            <div class="member-image">
+                                <div class="image-placeholder">
+                                    <!-- Replace with your team member photo -->
+                                    <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&q=80"
+                                         alt="Marcus Rodriguez - Senior Developer">
+                                    <div class="image-overlay"></div>
                                 </div>
+                            </div>
+                            <div class="member-info">
+                                <h4 class="member-name">Marcus Rodriguez</h4>
+                                <p class="member-title">Senior Developer</p>
+                                <p class="member-bio">Full-stack engineer passionate about performance optimization and cutting-edge web technologies.</p>
+                            </div>
+                        </div>
+
+                        <div class="team-member compact magnetic-item" data-scroll-reveal>
+                            <div class="member-image">
+                                <div class="image-placeholder">
+                                    <!-- Replace with your team member photo -->
+                                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop&q=80"
+                                         alt="Emma Watson - Brand Strategist">
+                                    <div class="image-overlay"></div>
+                                </div>
+                            </div>
+                            <div class="member-info">
+                                <h4 class="member-name">Emma Watson</h4>
+                                <p class="member-title">Brand Strategist</p>
+                                <p class="member-bio">Strategic thinker who transforms business goals into compelling digital narratives and experiences.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Features Grid -->
-            <div class="features-grid-section" data-scroll-section>
-                <div class="container">
-                    <div class="features-grid">
-                        <div class="feature-item" data-feature="design">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24">
+                <div class="team-culture" data-scroll-reveal>
+                    <div class="culture-stats">
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <svg viewBox="0 0 24 24" width="32" height="32">
                                     <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Premium Design</h3>
-                            <p class="feature-description">Beautiful interfaces that captivate and convert</p>
+                            <div class="culture-content">
+                                <div class="culture-number">100%</div>
+                                <div class="culture-label">Remote-First</div>
+                            </div>
                         </div>
-                        
-                        <div class="feature-item" data-feature="performance">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
+
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <svg viewBox="0 0 24 24" width="32" height="32">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Lightning Fast</h3>
-                            <p class="feature-description">Optimized for speed and performance</p>
+                            <div class="culture-content">
+                                <div class="culture-number">4.9/5</div>
+                                <div class="culture-label">Team Satisfaction</div>
+                            </div>
                         </div>
-                        
-                        <div class="feature-item" data-feature="mobile">
-                            <div class="feature-icon">
-                                <svg viewBox="0 0 24 24">
-                                    <path d="M17 2H7c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h10c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM7 4h10v12H7V4z"/>
+
+                        <div class="culture-item">
+                            <div class="culture-icon">
+                                <svg viewBox="0 0 24 24" width="32" height="32">
+                                    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
                                 </svg>
                             </div>
-                            <h3 class="feature-title">Mobile First</h3>
-                            <p class="feature-description">Responsive design for all devices</p>
+                            <div class="culture-content">
+                                <div class="culture-number">5+</div>
+                                <div class="culture-label">Countries</div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </section>                                <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-title">Analytics Ready</h3>
-                        <p class="feature-description">Built-in analytics integration to track performance and user engagement.</p>
-                    </div>
 
-                    <!-- Feature Card 6 -->
-                    <div class="feature-card" data-aos="fade-up" data-aos-delay="600">
-                        <div class="feature-icon">
-                            <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor">
-                                <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
-                            </svg>
-                        </div>
-                        <h3 class="feature-title">Secure & Safe</h3>
-                        <p class="feature-description">Enterprise-grade security with SSL encryption and data protection.</p>
+            <div class="team-background">
+                <div class="bg-grid"></div>
+                <div class="bg-spotlight"></div>
+            </div>
+        </section>
+
+        <!-- Testimonial Cinematic Experience -->
+        <section id="testimonials" class="cinematic-testimonials">
+            <div class="container-wide">
+                <div class="testimonials-header" data-scroll-reveal>
+                    <div class="section-badge floating-badge">
+                        <span>Testimonials</span>
+                        <div class="badge-aura"></div>
                     </div>
+                    <h2 class="section-title split-text">What Our Clients Say</h2>
+                    <p class="section-description">
+                        Real stories from real clients who've experienced<br>
+                        the transformative power of exceptional design.
+                    </p>
                 </div>
 
-                <!-- Feature Highlights Section -->
-                <div class="feature-highlights" data-aos="fade-up" data-aos-delay="400">
-                    <div class="highlight-item">
-                        <div class="highlight-number">99.9%</div>
-                        <div class="highlight-label">Uptime Guarantee</div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-number">24/7</div>
-                        <div class="highlight-label">Support Available</div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-number">50+</div>
-                        <div class="highlight-label">Components Included</div>
-                    </div>
-                    <div class="highlight-item">
-                        <div class="highlight-number">5★</div>
-                        <div class="highlight-label">Customer Rating</div>
-                    </div>
-                </div>
-
-                <!-- Testimonial Section -->
-                <div class="testimonial-section" data-aos="fade-up" data-aos-delay="500">
-                    <div class="testimonial-content">
-                        <div class="testimonial-text">
-                            <blockquote>
-                                "Flixon transformed our digital presence completely. The attention to detail and innovative approach exceeded all our expectations. Our conversion rate improved by 250% within the first month."
+                <div class="testimonials-carousel" data-scroll-reveal>
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <blockquote class="testimonial-text">
+                                "Flixon didn't just redesign our website—they reimagined our entire digital presence. The result? A 340% increase in conversions and countless compliments from our customers. Their attention to detail and understanding of user psychology is unmatched."
                             </blockquote>
-                        </div>
-                        <div class="testimonial-author">
-                            <div class="author-avatar">
-                                <div class="avatar-placeholder">
-                                    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
-                                        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
-                                    </svg>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&h=200&fit=crop&q=80"
+                                         alt="David Park, CEO of TechFlow">
+                                </div>
+                                <div class="author-details">
+                                    <div class="author-name">David Park</div>
+                                    <div class="author-title">CEO, TechFlow Solutions</div>
+                                    <div class="author-company">Series B Startup - $50M Valuation</div>
                                 </div>
                             </div>
-                            <div class="author-info">
-                                <div class="author-name">Sarah Johnson</div>
-                                <div class="author-title">CEO, TechStart Inc.</div>
+                        </div>
+                        <div class="testimonial-metrics">
+                            <div class="metric">
+                                <div class="metric-value">340%</div>
+                                <div class="metric-label">Conversion Increase</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">2.3s</div>
+                                <div class="metric-label">Load Time</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-slide">
+                        <div class="testimonial-content">
+                            <div class="quote-mark">"</div>
+                            <blockquote class="testimonial-text">
+                                "The team at Flixon transformed our outdated e-commerce platform into a stunning, high-converting experience. Sales increased by 180% in the first quarter, and our bounce rate dropped by 65%. They truly understand the intersection of design and business."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-image">
+                                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&h=200&fit=crop&q=80"
+                                         alt="Lisa Zhang, Founder of EcoLux">
+                                </div>
+                                <div class="author-details">
+                                    <div class="author-name">Lisa Zhang</div>
+                                    <div class="author-title">Founder, EcoLux</div>
+                                    <div class="author-company">Sustainable Fashion Brand</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="testimonial-metrics">
+                            <div class="metric">
+                                <div class="metric-value">180%</div>
+                                <div class="metric-label">Sales Growth</div>
+                            </div>
+                            <div class="metric">
+                                <div class="metric-value">65%</div>
+                                <div class="metric-label">Bounce Rate Drop</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- CTA Section -->
-                <div class="features-cta" data-aos="fade-up" data-aos-delay="600">
-                    <h3 class="cta-title">Ready to Get Started?</h3>
-                    <p class="cta-subtitle">Join thousands of satisfied customers who trust Flixon</p>
-                    <div class="cta-buttons">
-                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
-                        <a href="#services" class="btn btn-secondary">View Services</a>
+                <div class="testimonials-controls">
+                    <button class="testimonial-nav prev" aria-label="Previous testimonial">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
+                    <div class="testimonial-indicators">
+                        <button class="indicator active" data-slide="0"></button>
+                        <button class="indicator" data-slide="1"></button>
                     </div>
+                    <button class="testimonial-nav next" aria-label="Next testimonial">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </button>
                 </div>
+            </div>
+
+            <div class="testimonials-background">
+                <div class="bg-radial"></div>
+                <div class="bg-lines"></div>
             </div>
         </section>
         <section id="contact" class="contact-section">
@@ -1032,100 +1377,9 @@
             </div>
         </section>
 
-        <!-- Simple Theme Customizer -->
-        <div id="color-customizer" class="color-customizer">
-            <div class="customizer-header">
-                <h3>Choose Your Style</h3>
-                <button class="customizer-close" aria-label="Close customizer">&times;</button>
-            </div>
-            <div class="customizer-content">
-                <div class="customizer-section">
-                    <h4>Website Themes</h4>
-                    <p class="section-description">Select a pre-designed theme that matches your brand</p>
-                    
-                    <div class="theme-presets">
-                        <div class="theme-preset active" data-theme="neon">
-                            <div class="theme-preview">
-                                <div class="theme-colors">
-                                    <div class="color-dot" style="background: #00ff88;"></div>
-                                    <div class="color-dot" style="background: #00d4ff;"></div>
-                                    <div class="color-dot" style="background: #ff0080;"></div>
-                                </div>
-                            </div>
-                            <h5>Neon Tech</h5>
-                            <p>Modern and vibrant</p>
-                        </div>
-                        
-                        <div class="theme-preset" data-theme="ocean">
-                            <div class="theme-preview">
-                                <div class="theme-colors">
-                                    <div class="color-dot" style="background: #0891b2;"></div>
-                                    <div class="color-dot" style="background: #0284c7;"></div>
-                                    <div class="color-dot" style="background: #06b6d4;"></div>
-                                </div>
-                            </div>
-                            <h5>Ocean Blue</h5>
-                            <p>Professional and calm</p>
-                        </div>
-                        
-                        <div class="theme-preset" data-theme="forest">
-                            <div class="theme-preview">
-                                <div class="theme-colors">
-                                    <div class="color-dot" style="background: #16a34a;"></div>
-                                    <div class="color-dot" style="background: #15803d;"></div>
-                                    <div class="color-dot" style="background: #65a30d;"></div>
-                                </div>
-                            </div>
-                            <h5>Forest Green</h5>
-                            <p>Natural and organic</p>
-                        </div>
-                        
-                        <div class="theme-preset" data-theme="sunset">
-                            <div class="theme-preview">
-                                <div class="theme-colors">
-                                    <div class="color-dot" style="background: #ea580c;"></div>
-                                    <div class="color-dot" style="background: #dc2626;"></div>
-                                    <div class="color-dot" style="background: #f59e0b;"></div>
-                                </div>
-                            </div>
-                            <h5>Warm Sunset</h5>
-                            <p>Energetic and bold</p>
-                        </div>
-                        
-                        <div class="theme-preset" data-theme="minimal">
-                            <div class="theme-preview">
-                                <div class="theme-colors">
-                                    <div class="color-dot" style="background: #374151;"></div>
-                                    <div class="color-dot" style="background: #6b7280;"></div>
-                                    <div class="color-dot" style="background: #9ca3af;"></div>
-                                </div>
-                            </div>
-                            <h5>Minimal Gray</h5>
-                            <p>Clean and elegant</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="customizer-section">
-                    <h4>Quick Settings</h4>
-                    <div class="simple-controls">
-                        <div class="control-group">
-                            <label>Website Mode</label>
-                            <div class="toggle-group">
-                                <button class="toggle-btn active" data-mode="dark">Dark</button>
-                                <button class="toggle-btn" data-mode="light">Light</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <!-- Theme customizer removed for minimal fixed palette -->
 
-        <!-- Particles Canvas -->
-        <canvas id="particles-canvas" class="particles-canvas"></canvas>
-
-        <!-- Cursor Effects -->
-        <div id="cursor-trail" class="cursor-trail"></div>
+        <!-- Particles and cursor effects removed for minimalism -->
     </main>
 
     <footer class="main-footer">
@@ -1181,7 +1435,15 @@
     <script src="js/animations.js"></script>
     <script src="js/components.js"></script>
     <script src="js/advanced-effects.js"></script>
-    <script src="js/customizer.js"></script>
+    <script src="js/page-transitions.js"></script>
     <script src="js/features.js"></script>
+    <script src="js/modern-animations.js"></script>
+
+    <!-- Advanced Animation Libraries -->
+    <script src="https://unpkg.com/lenis@1.0.0/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/split-type@0.3.4/dist/index.umd.js"></script>
+    <script src="js/groundbreaking-animations.js"></script>
 </body>
 </html>

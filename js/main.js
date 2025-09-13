@@ -212,6 +212,10 @@ class Navigation {
     }
     
     handleNavClick(e, link) {
+        if (window.__overlayTransitioning) {
+            // Let overlay handler manage the scroll
+            return;
+        }
         const href = link.getAttribute('href');
         
         // Handle anchor links

@@ -569,21 +569,21 @@ class PerformanceMonitor {
 
 // ===== INITIALIZATION =====
 document.addEventListener('DOMContentLoaded', () => {
-    // Check if user prefers reduced motion
+    // Minimalism-first: disable particles and magnetic cursor by default
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-    
+
     if (!prefersReducedMotion.matches) {
-        // Initialize all advanced effects
-        window.particleSystem = new ParticleSystem();
-        window.magneticCursor = new MagneticCursor();
-        // UltraSmoothScroll is now opt-in via customizer
+        // Keep subtle scroll/micro interactions only
+        window.particleSystem = null; // disabled
+        window.magneticCursor = null; // disabled
+        // UltraSmoothScroll disabled by default for stability
         window.ultraSmoothScroll = null;
         window.advancedScrollEffects = new AdvancedScrollEffects();
         window.microInteractions = new MicroInteractions();
         window.loadingAnimations = new LoadingAnimations();
         window.performanceMonitor = new PerformanceMonitor();
     } else {
-        // Provide fallbacks for reduced motion
+        // Reduced motion fallback: no animations
         window.particleSystem = { toggle: () => {} };
         window.magneticCursor = { toggle: () => {} };
         window.ultraSmoothScroll = null;
