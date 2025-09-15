@@ -5,7 +5,8 @@
       "Bash(grep:*)",
       "WebFetch(domain:thefirstthelast.agency)",
       "Bash(claude doctor)",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:codepen.io)"
     ],
     "deny": [],
     "ask": []

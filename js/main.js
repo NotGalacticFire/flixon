@@ -653,3 +653,130 @@ function initHeroTyping() {
 }
 
 // Hero title compression removed per updated design
+
+// ===== TECHNOLOGY CAROUSEL =====
+class TechCarousel {
+    constructor() {
+        this.carousel = $('#techCarousel');
+        this.slides = $$('.tech-slide');
+        this.indicators = $$('.carousel-indicators .indicator');
+        this.prevBtn = $('#prevBtn');
+        this.nextBtn = $('#nextBtn');
+        this.currentSlide = 0;
+        this.autoPlayInterval = null;
+        this.autoPlayDelay = 5000; // 5 seconds
+
+        this.init();
+    }
+
+    init() {
+        if (!this.carousel) {
+            console.warn('Tech carousel not found');
+            return;
+        }
+
+        console.log('Initializing tech carousel with:', {
+            slides: this.slides.length,
+            indicators: this.indicators.length,
+            prevBtn: !!this.prevBtn,
+            nextBtn: !!this.nextBtn
+        });
+
+        // Set up event listeners
+        if (this.prevBtn) {
+            this.prevBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('Previous button clicked');
+                this.previousSlide();
+            });
+        }
+
+        if (this.nextBtn) {
+            this.nextBtn.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('Next button clicked');
+                this.nextSlide();
+            });
+        }
+
+        this.indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', (e) => {
+                e.preventDefault();
+                console.log('Indicator clicked:', index);
+                this.goToSlide(index);
+            });
+        });
+
+        // Set up auto-play
+        this.startAutoPlay();
+
+        // Pause auto-play on hover
+        this.carousel.addEventListener('mouseenter', () => this.pauseAutoPlay());
+        this.carousel.addEventListener('mouseleave', () => this.startAutoPlay());
+
+        // Initialize first slide
+        this.updateSlides();
+    }
+
+    goToSlide(index) {
+        this.currentSlide = index;
+        this.updateSlides();
+        this.restartAutoPlay();
+    }
+
+    nextSlide() {
+        this.currentSlide = (this.currentSlide + 1) % this.slides.length;
+        this.updateSlides();
+        this.restartAutoPlay();
+    }
+
+    previousSlide() {
+        this.currentSlide = this.currentSlide === 0 ? this.slides.length - 1 : this.currentSlide - 1;
+        this.updateSlides();
+        this.restartAutoPlay();
+    }
+
+    updateSlides() {
+        // Update slides
+        this.slides.forEach((slide, index) => {
+            slide.classList.remove('active', 'prev', 'next');
+
+            if (index === this.currentSlide) {
+                slide.classList.add('active');
+            } else if (index === this.currentSlide - 1 || (this.currentSlide === 0 && index === this.slides.length - 1)) {
+                slide.classList.add('prev');
+            } else if (index === this.currentSlide + 1 || (this.currentSlide === this.slides.length - 1 && index === 0)) {
+                slide.classList.add('next');
+            }
+        });
+
+        // Update indicators
+        this.indicators.forEach((indicator, index) => {
+            indicator.classList.toggle('active', index === this.currentSlide);
+        });
+    }
+
+    startAutoPlay() {
+        this.pauseAutoPlay(); // Clear any existing interval
+        this.autoPlayInterval = setInterval(() => {
+            this.nextSlide();
+        }, this.autoPlayDelay);
+    }
+
+    pauseAutoPlay() {
+        if (this.autoPlayInterval) {
+            clearInterval(this.autoPlayInterval);
+            this.autoPlayInterval = null;
+        }
+    }
+
+    restartAutoPlay() {
+        this.pauseAutoPlay();
+        this.startAutoPlay();
+    }
+}
+
+// Initialize carousel when DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    new TechCarousel();
+});

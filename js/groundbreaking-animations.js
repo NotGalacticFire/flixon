@@ -721,24 +721,33 @@ class GroundbreakingAnimations {
             });
         });
 
-        // Skills animation
-        const skillItems = document.querySelectorAll('.skill-item');
-        skillItems.forEach(skill => {
-            const skillLevel = parseInt(skill.dataset.skill) || 90;
-
+        // Skills animation - trigger as a group so bars finish together
+        const skillsContainer = document.querySelector('.skill-items');
+        if (skillsContainer) {
             ScrollTrigger.create({
-                trigger: skill,
+                trigger: skillsContainer,
                 start: "top 80%",
                 onEnter: () => {
-                    skill.classList.add('animate-fill');
-                    // Set the actual width for the skill fill
-                    const fill = skill.querySelector('.skill-fill');
-                    if (fill) {
-                        fill.style.transform = `scaleX(${skillLevel / 100})`;
-                    }
+                    const items = skillsContainer.querySelectorAll('.skill-item');
+                    items.forEach(item => {
+                        const level = parseInt(item.dataset.skill) || 90;
+                        item.classList.add('animate-fill');
+                        const fill = item.querySelector('.skill-fill');
+                        if (fill) {
+                            // Animate width so each bar ends at its percentage, all finish together
+                            gsap.fromTo(fill,
+                                { width: '0%' },
+                                {
+                                    width: `${level}%`,
+                                    duration: 1.6,
+                                    ease: "power2.out"
+                                }
+                            );
+                        }
+                    });
                 }
             });
-        });
+        }
 
         // Floating badge animation
         const badges = document.querySelectorAll('.animated-badge, .magnetic-badge');
